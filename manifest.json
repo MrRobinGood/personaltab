@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Robingood New Tab",
+  "description": "Robingood New Tab ",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "logo512.png",
+    "48": "logo512.png",
+    "128": "logo512.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+
+  "content_security_policy": "script-src 'self'; object-src 'self'; img-src * data:;",
+
+  "permissions": ["activeTab", "https://ajax.googleapis.com/"]
+}
